@@ -33,8 +33,8 @@ class StringBladeCompilerServiceProvider extends ServiceProvider
         $config_path = __DIR__.'/../../../config/stringblade.php';
         $this->publishes([$config_path => config_path('stringblade.php')], 'config');
 
-        $views_path = __DIR__.'/../../../config';
-        $this->publishes([$views_path => storage_path('app/stringblade')]);
+        $views_path = __DIR__.'/../../../config/.gitkeep';
+        $this->publishes([$views_path => storage_path('app/stringblade/.gitkeep')]);
     }
 
     /**
