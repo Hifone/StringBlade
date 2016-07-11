@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Hifone\Services\StringBlade;
+namespace Hifone\StringBlade;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\View\Engines\CompilerEngine;
@@ -58,7 +58,7 @@ class StringBladeCompilerServiceProvider extends ServiceProvider
         });
         $this->app->booting(function () {
             $loader = \Illuminate\Foundation\AliasLoader::getInstance();
-            $loader->alias('StringBlade', 'Hifone\Services\StringBlade\Facades\StringBlade');
+            $loader->alias('StringBlade', 'Hifone\StringBlade\Facades\StringBlade');
         });
     }
 
